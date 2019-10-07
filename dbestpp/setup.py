@@ -10,9 +10,9 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='modelupdate',
+    name='dbestpp',
     version='0.0.1',
-    description='model update strategy.',
+    description='DBEst with NN.',
     classifiers=[
         'Development Status :: 0.0.1',
         'License :: OSI Approved :: Apache License 2.0',
@@ -20,14 +20,14 @@ setup(
         'Topic :: Approximate Query Processing :: AQP :: Data Warehouse',
       ],
     keywords='Approximate Query Processing AQP',
-    url='https://github.com/qingzma/DBEstClient',
+    url='https://github.com/qingzma/DBEstpp',
     author='Qingzhi Ma',
     author_email='Q.Ma.2@warwick.ac.uk',
     long_description=readme,
     license='Apache License 2.0',#license,
-    packages=['modelupdate'], #find_packages(exclude=('examples', 'docs')),
+    packages=['dbestpp'], #find_packages(exclude=('examples', 'docs')),
     entry_points = {
-            'console_scripts': ['modelupdate=modelupdate.main:main'],
+            'console_scripts': ['dbestpp=dbestpp.main:main'],
         },
     zip_safe=False,
     install_requires=[
